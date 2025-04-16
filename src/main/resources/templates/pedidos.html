@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/pedidos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header>
+        <section class="banner" id="banner">
+            <ul class="banner-slider">
+                <li class="banner-item active-banner">
+                    <div class="container">
+                        <h1>La auténtica pasión culinaria</h1>
+                        <p class="text">la comida es el ingrediente que nos une.</p>
+                        <button type="button">ordenar</button>
+                    </div>
+                </li>
+                <li class="banner-item">
+                    <div class="container">
+                        <h1>Descubre la magia de los sabores</h1>
+                        <p class="text">saborea la fusión que nos une.</p>
+                        <button type="button">ordenar</button>
+                    </div>
+                </li>
+                <li class="banner-item">
+                    <div class="container">
+                        <h1>Cocina con alma</h1>
+                        <p class="text">amor y dedicación en cada receta.</p>
+                        <button type="button">ordenar</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!--navbar-->
+        <nav class="navbar containerNav">
+            <div class="container">
+
+                <div class="logo-toggler">
+
+                    <a href="index.html" class="navbar-brand">
+                        <img src="images/images/LOGO.png">
+                    </a>
+
+                    <button type="button" class="hamburger" id="navbar-burger">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li><a href="index.html">inicio</a></li>
+                        <li><a href="menu.html">menú</a></li>
+                        <li><a href="galeria.html">galería</a></li>
+                        <li><a href="pedidos.html" class="action">pedidos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Pedidos-->
+    <section class="pedidos" id="pedidos">
+        
+        <div class="container">
+
+            <div class="title">
+                <h2>Pedidos</h2>
+                <div class="line center">
+                    <div></div>
+                    <span>
+                        <i class="fas fa-utensils"></i>
+                    </span>
+                    <div></div>
+                </div>
+            </div>
+
+                <div class="pedidos-row-1">
+                    <form class="pedidos-form">
+                        <input type="text" class="form-control" placeholder="Nombre" required>
+                        <input type="text" class="form-control" placeholder="Apellido" required>
+                        <input type="tel" class="form-control" placeholder="Teléfono" required>
+                        <input type="email" class="form-control" placeholder="Email" required>
+                        <input type="text" class="form-control" placeholder="Nombre del Plato" required>
+                        <input type="number" class="form-control" min="1" placeholder="Cantidad" required>
+                        <textarea rows="3" class="form-control" placeholder="Dirección" required></textarea>
+                        <textarea rows="3" class="form-control" placeholder="Mensaje (Opcional)"></textarea>
+                        <input type="submit" class="form-submit-btn" value="ordenar">
+                    </form>
+                </div>
+        </div>
+    </section>
+
+    <!--popup-->
+    <div id="overlay" class="overlay"></div>
+    <div id="popup" class="popup">
+        <h2>¡Pedido Enviado!</h2>
+        <h3><i class="fa-solid fa-circle-check"></i></h3>
+        <p class="pp">Tu pedido esta en camino.</p>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="footer-info">
+            <div class="container">
+                <div class="footer-row-2">
+                    <div class="footer-col-1">
+                        <h2>Contáctanos</h2>
+                        <ul>
+                            <li>Lima, Perú</li>
+                            <li>987 888 266</li>
+                            <li>lacasadelleon@gmail.com</li>
+                            <li>www.lacasadelleon.web.app</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <h2>Siguenos</h2>
+                        <p class="text">Te invitamos a seguirnos en nuestras redes sociales.</p>
+                        <ul class="center">
+                            <li class="center">
+                                <a href="https://www.facebook.com/la.casa.del.leon.restaurant/">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="center">
+                                <a href="https://wa.me/+51957640329">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <p class="text">&copy; La Casa del León 2025</p>
+    </footer>
+
+    <script src="jquery/jquery-3.5.1.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
